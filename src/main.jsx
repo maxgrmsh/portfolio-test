@@ -1,0 +1,16 @@
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import '@fontsource/martian-mono/latin-500.css'
+import '@fontsource/martian-mono/latin-700.css'
+import '@fontsource/martian-mono/latin-ext-500.css'
+import '@fontsource/martian-mono/latin-ext-700.css'
+import '@fontsource/martian-mono/cyrillic-500.css'
+import '@fontsource/martian-mono/cyrillic-700.css'
+import '@fontsource/geologica/cyrillic-400.css'
+import '@fontsource/geologica/latin-400.css'
+import '@fontsource/caveat/latin-700.css'
+import '@fontsource/caveat/cyrillic-700.css'
+import './styles.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(<App />)
