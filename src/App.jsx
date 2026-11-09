@@ -7,9 +7,9 @@ import case3 from './assets/case-03.jpg'
 const links = ['Кейси', 'Виступи', 'Про мене', 'Контакти']
 
 const cases = [
-  { n: '01', img: case1, title: 'Тренінг для редакцій ЦЕДЕМ', text: 'як прибрати рутину з роботи журналіста' },
-  { n: '02', img: case2, title: 'Система бренду в коді', text: 'тексти й рендер роблять агенти' },
-  { n: '03', img: case3, title: 'Figma-плагін', text: 'український плейсхолдер-контент за клік' },
+  { n: '01', img: case1, title: 'Тренінг для редакцій', text: 'менше рутини для журналістів' },
+  { n: '02', img: case2, title: 'Бренд у коді', text: 'тексти й візуали роблять агенти' },
+  { n: '03', img: case3, title: 'Figma-плагін', text: 'українські тексти в один клік' },
 ]
 
 export default function App() {
@@ -35,13 +35,13 @@ export default function App() {
             <div className="hero">
               <div className="label">
                 <span className="num">01</span>
-                <span className="label-text">AI-автоматизація · медіа й команди</span>
+                <span className="label-text">AI для медіа й команд</span>
               </div>
-              <h1>Автоматизую рутинні процеси медіа й невеликих команд з AI та агентами</h1>
-              <p className="lead">Щоб люди ставили задачі й ухвалювали рішення, а рутину робили агенти.</p>
+              <h1>Прибираю рутину з вашої роботи за допомогою AI</h1>
+              <p className="lead">Ви вирішуєте, що важливо, а агенти роблять решту.</p>
               <div className="cta">
-                <a className="btn-primary" href="#">Розказати про задачу →</a>
-                <a className="btn-secondary" href="#">Дивитись кейси</a>
+                <a className="btn-primary" href="#">Розкажіть про задачу →</a>
+                <a className="btn-secondary" href="#">Мої кейси</a>
               </div>
             </div>
             <div className="hero-media">
