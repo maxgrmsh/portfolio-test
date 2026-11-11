@@ -30,42 +30,39 @@ export default function App() {
           </div>
         </nav>
 
-        <main className="hero-and-cases">
-          <section className="hero-row">
-            <div className="hero">
-              <div className="label">
-                <span className="num">01</span>
-                <span className="label-text">AI для медіа й команд</span>
-              </div>
-              <h1>Прибираю рутину з вашої роботи за допомогою AI</h1>
-              <p className="lead">Ви вирішуєте, що важливо, а агенти роблять решту.</p>
-              <div className="cta">
-                <a className="btn-primary" href="#">Розкажіть про задачу →</a>
-                <a className="btn-secondary" href="#">Мої кейси</a>
-              </div>
+        <main className="bento">
+          <section className="b-head">
+            <div className="label">
+              <span className="num">01</span>
+              <span className="label-text">AI для медіа й команд</span>
             </div>
-            <div className="hero-media">
-              <div className="photo"><img src={heroImg} alt="maxharmash" /></div>
-              <img className="arrow" src={arrow} alt="" />
-              <span className="note">це головне!</span>
-            </div>
+            <h1>Прибираю рутину з вашої роботи за допомогою AI</h1>
+            <p className="lead">Ви вирішуєте, що важливо, а агенти роблять решту.</p>
+            <img className="arrow" src={arrow} alt="" />
+            <span className="note">це головне!</span>
           </section>
 
-          <section className="cases">
-            <p className="cases-label">Кейси</p>
-            <div className="cards">
-              {cases.map((c) => (
-                <article className="card" key={c.n}>
-                  <img src={c.img} alt="" />
-                  <div className="caption">
-                    <span className="card-n">{c.n}</span>
-                    <span className="card-title">{c.title}</span>
-                  </div>
-                  <p>{c.text}</p>
-                </article>
-              ))}
-            </div>
-          </section>
+          <figure className="b-photo">
+            <img src={heroImg} alt="maxharmash" />
+          </figure>
+
+          <div className="b-cta">
+            <a className="btn-primary" href="#">Розкажіть про задачу →</a>
+            <a className="btn-secondary" href="#">Мої кейси</a>
+          </div>
+
+          <p className="b-cases-head">Кейси</p>
+
+          {cases.map((c) => (
+            <article className="b-case" key={c.n}>
+              <img src={c.img} alt="" />
+              <div className="caption">
+                <span className="card-n">{c.n}</span>
+                <span className="card-title">{c.title}</span>
+              </div>
+              <p>{c.text}</p>
+            </article>
+          ))}
         </main>
       </div>
     </div>
